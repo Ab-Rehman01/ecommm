@@ -2,13 +2,16 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
 import { getFirestore,
+  query,
   doc,
-  setDoc 
+  setDoc,
+  collection,
+  addDoc
  } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 import { getStorage,
-  ref,
+  ref,  
   uploadBytes,
-  getDownloadURL
+    getDownloadURL
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-storage.js";
 
 import {
@@ -53,5 +56,7 @@ export {
   uploadBytes,
   getDownloadURL,
   signOut,
-   
+  addDoc, 
+  collection,
+  query
  };
